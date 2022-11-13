@@ -1,0 +1,18 @@
+<div class="container ng-scope" ng-controller="signUpCtrl">
+    <h1>Sign Up</h1>
+</div>
+
+<div class="log">
+    <div class="logIn-form">
+        <label for="name"><b>Full Name</b></label>
+        <input type="text" name="name" ng-model="name">
+        <label for="username"><b>Username</b></label>
+        <input type="text" name="username" ng-model="username">
+        <label for="password"><b>Password</b></label>
+        <input type="password" name="password" ng-model="password">
+        <button class="create-btn" type="button" ng-click="submit()">Create an Account</button>
+        <hr class="devider">
+        Already have an account?
+        <a href="#!/user/signIn" class="button create-btn">Sign In</a>
+    </div>
+</div>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geeks</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.3/angular-route.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="head1">
+            <a href="#"><img src="images/task_logo.svg"></a>
+            <div class="part1">
+                <div class="dropdown">
+                    <a class="items dropbtn">Browse</a>
+                    <div class="dropdown-content">
+                        <a href="">Web Dev</a>
+                        <a href="">Design</a>
+                        <a href="">Software</a>
+                        <a href="">Music</a>
+                    </div>
+                </div>
+                <a class="items">Landing</a>
+                <a class="items">Pages</a>
+                <a class="items">Accounts</a>
+                <a class="items">···</a>
+                <a class="items">
+                    <form class="inp" action="#!/courses/search">
+                        <i class="fa fa-search" style="color: black;padding-left: 1rem;position: absolute;"></i>
+                        <input type="text" placeholder="Search Courses" style="
+                    padding-left: 2.5rem;
+                " ng-model="$root.search">
+                    </form>
+                </a>
+            </div>
+            <div class="part2">
+                <a><img src="images/webps/bell.webp" class="bell"></a>
+                <a href="#!/user/signIn"><img ng-src="{{usericon}}" class="user"></a>
+            </div>
+        </div>
+    </nav>
+    <ng-view></ng-view>
+    <hr class="footer">
+    <div id="footer">
+        <footer>© 2022 Geeks. All Rights Reserved.</footer>
+    </div>
+</body>
+
+</html>

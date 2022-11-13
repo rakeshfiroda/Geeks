@@ -1,0 +1,95 @@
+<div class="container">
+    <div class="text-area">
+        <h1>Welcome to Geeks UI Learning Application</h1>
+        <p class="main-down">Hand-picked Instructor and expertly crafted courses, designed for the modern students
+            and entrepreneur.</p>
+        <div class="main-button">
+            <a class="button g" href="#!/courses/search">Browse Courses</a>
+            <!-- <a class="button g">Browse Courses</a> -->
+            <button class="button w">Are You Instructor?</button>
+        </div>
+    </div>
+    <a><img src="images/hero-img.png" class="hero"></a>
+</div>
+
+<div class="under-bar">
+    <div class="under-section">
+        <div>
+            <img src="images/video-camera.png" class="under-icon">
+        </div>
+        <div class="under-text">
+            <p class="big">30,000 online courses</p>
+            <p class="small">Enjoy a variety of fresh topics</p>
+        </div>
+    </div>
+    <div class="under-section">
+        <div>
+            <img src="images/users.png" class="under-icon">
+        </div>
+        <div class="under-text">
+            <p class="big">Expert instruction</p>
+            <p class="small">Find the right Instructor for you</p>
+        </div>
+    </div>
+    <div class="under-section">
+        <div class=>
+            <img src="images/clock.png" class="under-icon">
+        </div>
+        <div class="under-text">
+            <p class="big">Lifetime access</p>
+            <p class="small">Learn on your schedule</p>
+        </div>
+    </div>
+</div>
+
+<h2 class="header-text" style="margin-top: 5%;">Recommended to you</h2>
+
+<div class="grid">
+    <div ng-repeat="course in courses">
+        <div class="grid-item">
+            <a href="#!/{{course.id}}"><img ng-src="{{course['value'].image}}" class="grid-img" alt="{{course.id}}"></a>
+            <div class="grid-content">
+                <a href="#!/{{course.id}}">
+                    <h3 class="course-name">{{course["value"].name}}</h3>
+                </a>
+                <hr>
+                <p class="author-name">{{course["value"].author}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<h2 class="header-text">Most Popular</h2>
+
+<div class="grid">
+    <div ng-repeat="course in courses">
+        <div class="grid-item">
+            <a href="#!/{{course.id}}"><img ng-src="{{course['value'].image}}" class="grid-img" alt="{{course.id}}"></a>
+            <div class="grid-content">
+                <a href="#!/{{course.id}}">
+                    <h3 class="course-name">{{course["value"].name}}</h3>
+                </a>
+                <hr>
+                <p class="author-name">{{course["value"].author}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<h2 class="header-text">Trending</h2>
+
+<div class="grid">
+    <div ng-repeat="course in courses">
+        <div class="grid-item">
+            <a href="#!/{{course.id}}"><img ng-src="{{course['value'].image}}" class="grid-img" alt="{{course.id}}"></a>
+            <div class="grid-content">
+                <a href="#!/{{course.id}}">
+                    <h3 class="course-name">{{course["value"].name}}</h3>
+                </a>
+                <hr>
+                <p class="author-name">{{course["value"].author}}</p>
+            </div>
+        </div>
+    </div>
+</div>

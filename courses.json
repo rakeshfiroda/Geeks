@@ -1,0 +1,28 @@
+{
+    "courses": [
+        {
+            "id": "Python",
+            "name": "Pythoncourse: build web apps",
+            "author": "Rakesh Firoda",
+            "image": "images/python.jpeg"
+        },
+        {
+            "id": "Graphql",
+            "name": "Graphql: ultimate begginers guide to learn",
+            "author": "Vartika Sinha",
+            "image": "images/Graphql.jpeg"
+        },
+        {
+            "id": "Angular",
+            "name": "Angular: the complete guide for beginner",
+            "author": "Ravi Kumar",
+            "image": "images/angular.jpeg"
+        },
+        {
+            "id": "React",
+            "name": "React: Create a website with react",
+            "author": "Ramanjit Singh",
+            "image": "images/react.jpeg"
+        }
+    ]
+}

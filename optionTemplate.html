@@ -1,0 +1,12 @@
+<div class="ele-div inline-block" ng-click="toggleOptions()">
+    <span class="ele">{{selected}}</span>
+    <a class="arrow">v</a>
+</div>
+<ul ng-show="show">
+    <li ng-repeat="(course, count) in selectList" ng-click="selectOption(course)" ng-if="select != selected">
+        <div class="ele-div">
+            <span class="ele">{{course}}</span>
+            <span class="ele-count">{{count}}</span>
+        </div>
+    </li>
+</ul>

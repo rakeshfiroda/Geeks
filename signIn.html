@@ -1,0 +1,21 @@
+<div ng-controller="signInCtrl">
+    <div class="container ng-scope">
+        <h1>Sign In</h1>
+    </div>
+
+    <div class="log">
+        <div class="logIn-form">
+            <form name="LoginForm">
+                <label for="username"><b>Username</b></label>
+                <input type="text" name="username" id="username" ng-model="username" required>
+                <label for="password"><b>Password</b></label>
+                <input type="password" name="password" id="password" ng-model="password" required>
+                <button type="submit" ng-click="submit()">Login</button>
+            </form>
+            <input type="checkbox" checked="checked" name="remember" ng-model="remember" checked> Remember me
+            <hr class="devider">
+            Don't have an account?
+            <a href="#!/user/signUp" class="button create-btn">Create an Account</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<div ng-controller="CourseDetailCtrl">
+    <div class="container ng-scope">
+        <h1>Getting Started with {{course._id}}</h1>
+        <p class="author-name">- {{course.author}}</p>
+        <div>
+            <input type="button" ng-click="checkUpdate()" class="button w" value="Update?">
+        </div>
+    </div>
+
+    <div ng-show="showInputBox" class="update-course-div">
+        <input type="text" placeholder="Enter Course Name" class="update-course-input" ng-model="updatedCourse">
+        <a ng-click="update()" class="update-course-button button g">Update</a>
+    </div>
+    <div ng-show="warningMsg" class="update-course-div">
+        <span style="color: white;background: red;padding: 10px 10px;margin-top: 10px;">You are not authorised to use
+            this
+            command
+        </span>
+    </div>
+</div>
